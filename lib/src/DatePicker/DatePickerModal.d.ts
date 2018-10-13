@@ -8,9 +8,14 @@ import { BasePickerProps } from '../_shared/BasePicker'
 import { Omit } from '@material-ui/core'
 import { BaseDatePickerProps } from './DatePicker';
 
-export type DatePickerModalProps = BasePickerProps & BaseDatePickerProps & Omit<ModalWrapperProps, 'onChange' | 'value'> & {
-}
+// export interface DatePickerModalProps extends
+//   BasePickerProps,
+//   BaseDatePickerProps,
+//   Omit<ModalWrapperProps, 'onChange' | 'value'> {}
 
+  export type DatePickerModalProps = BasePickerProps & BaseDatePickerProps & Omit<ModalWrapperProps, 'onChange' | 'value'> &
+  {}
 declare const DatePickerModal: ComponentClass<DatePickerModalProps>;
 
 export default DatePickerModal;
+
